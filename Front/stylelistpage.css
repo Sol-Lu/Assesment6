@@ -12,17 +12,15 @@ html{
     height: 100%;
     width: 200px;
     position: fixed; 
-    z-index: 1;
     top: 0;
     left: 0;
-    background-color:aquamarine;
-    overflow-x: hidden;
+    background-color:#7E57C2;
 }
 
 #menu a{
     margin-top: 5px;
     padding: 6px 8px 6px 16px;
-    color: black;
+    color: white;
     width: 100%;
     text-decoration: none;
     font-size: 20px;
@@ -30,7 +28,7 @@ html{
 }
 
 #menu a:hover{
-        background-color: aqua;
+        background-color: #673AB7;
 }
 
 

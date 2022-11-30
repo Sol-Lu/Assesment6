@@ -26,7 +26,7 @@ public class CrmentityEntity {
         this.entityName = entityName;
     }
 
-    public boolean isBusiness() {
+    public boolean isBusiness(boolean b) {
         return business;
     }
 

@@ -10,7 +10,8 @@ public class ContactEntity {
     private boolean client;
     private String projectName;
 
-    public ContactEntity(LocalDate dateOfContact, String viaOfContact, String entityName, String contentOfContact, boolean client, String projectName) {
+    public ContactEntity(LocalDate dateOfContact, String viaOfContact, String entityName, String contentOfContact,
+                         boolean client, String projectName) {
         this.dateOfContact = dateOfContact;
         this.viaOfContact = viaOfContact;
         this.entityName = entityName;
