@@ -1,13 +1,15 @@
 package com.assesment6.CRM.Controllers;
 
 import com.assesment6.CRM.Entities.CrmentityEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class MainUsernameController {
-    @PutMapping("/crmentity")
+    @PutMapping("/crmentitymain")
     public CrmentityEntity createCrmentity(){
         return null;
     }
