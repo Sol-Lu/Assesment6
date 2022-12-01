@@ -1,26 +1,36 @@
-package com.assesment6.CRM.Entities;
+package com.Assesment6.CRM.Entities;
 
 import java.time.LocalDate;
 
 public class ContactEntity {
+    private String contactID;
     private LocalDate dateOfContact;
     private String viaOfContact;
-    private String entityName;
+    private String entityID;
     private String contentOfContact;
+    private String projectID;
     private boolean client;
-    private String projectName;
 
-    public ContactEntity(LocalDate dateOfContact, String viaOfContact, String entityName, String contentOfContact,
-                         boolean client, String projectName) {
+    public ContactEntity(String contactID, LocalDate dateOfContact, String viaOfContact, String entityID,
+                         String contentOfContact, String projectID, boolean client) {
+        this.contactID = contactID;
         this.dateOfContact = dateOfContact;
         this.viaOfContact = viaOfContact;
-        this.entityName = entityName;
+        this.entityID = entityID;
         this.contentOfContact = contentOfContact;
+        this.projectID = projectID;
         this.client = client;
-        this.projectName = projectName;
     }
 
     public ContactEntity() {
+    }
+
+    public String getContactID() {
+        return contactID;
+    }
+
+    public void setContactID(String contactID) {
+        this.contactID = contactID;
     }
 
     public LocalDate getDateOfContact() {
@@ -39,12 +49,12 @@ public class ContactEntity {
         this.viaOfContact = viaOfContact;
     }
 
-    public String getEntityName() {
-        return entityName;
+    public String getEntityID() {
+        return entityID;
     }
 
-    public void setEntityName(String entityName) {
-        this.entityName = entityName;
+    public void setEntityID(String entityID) {
+        this.entityID = entityID;
     }
 
     public String getContentOfContact() {
@@ -55,19 +65,19 @@ public class ContactEntity {
         this.contentOfContact = contentOfContact;
     }
 
+    public String getProjectID() {
+        return projectID;
+    }
+
+    public void setProjectID(String projectID) {
+        this.projectID = projectID;
+    }
+
     public boolean isClient() {
         return client;
     }
 
     public void setClient(boolean client) {
         this.client = client;
-    }
-
-    public String getProjectName() {
-        return projectName;
-    }
-
-    public void setProjectName(String projectName) {
-        this.projectName = projectName;
     }
 }

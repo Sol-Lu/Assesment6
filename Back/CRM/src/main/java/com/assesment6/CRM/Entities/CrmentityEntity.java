@@ -1,13 +1,16 @@
-package com.assesment6.CRM.Entities;
+package com.Assesment6.CRM.Entities;
 
 public class CrmentityEntity {
+    private String entityID;
     private String entityName;
     private boolean business;
     private String email;
     private int phoneNumber;
     private String address;
 
-    public CrmentityEntity(String entityName, boolean business, String email, int phoneNumber, String address) {
+    public CrmentityEntity(String entityID, String entityName, boolean business, String email, int phoneNumber,
+                           String address) {
+        this.entityID = entityID;
         this.entityName = entityName;
         this.business = business;
         this.email = email;
@@ -16,6 +19,14 @@ public class CrmentityEntity {
     }
 
     public CrmentityEntity() {
+    }
+
+    public String getEntityID(String s) {
+        return entityID;
+    }
+
+    public void setEntityID(String entityID) {
+        this.entityID = entityID;
     }
 
     public String getEntityName() {

@@ -1,4 +1,4 @@
-package com.assesment6.CRM.Entities;
+package com.Assesment6.CRM.Entities;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -6,12 +6,13 @@ import java.util.List;
 public class OportunityEntity extends ProjectEntity{
     private String proposals;
 
-    public OportunityEntity() {
+    public OportunityEntity(String entityID, List<String> contactList, LocalDate startDate, LocalDate endDate,
+                            String projectID, String projectDescription, String proposals) {
+        super(entityID, contactList, startDate, endDate, projectID, projectDescription);
+        this.proposals = proposals;
     }
 
-    public OportunityEntity(String entityName, List<String> contactList, LocalDate startDate, LocalDate endDate, String projectName, String proposals) {
-        super(entityName, contactList, startDate, endDate, projectName);
-        this.proposals = proposals;
+    public OportunityEntity() {
     }
 
     public String getProposals() {

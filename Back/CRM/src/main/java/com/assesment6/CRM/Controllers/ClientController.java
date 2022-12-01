@@ -1,7 +1,6 @@
-package com.assesment6.CRM.Controllers;
+package com.Assesment6.CRM.Controllers;
 
-import com.assesment6.CRM.Entities.ClientEntity;
-import org.springframework.http.ResponseEntity;
+import com.Assesment6.CRM.Entities.ClientEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;

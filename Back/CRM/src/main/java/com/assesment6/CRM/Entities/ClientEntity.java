@@ -1,37 +1,36 @@
-package com.assesment6.CRM.Entities;
+package com.Assesment6.CRM.Entities;
 
 import java.time.LocalDate;
 import java.util.List;
 
-public class ClientEntity extends ProjectEntity {
+public class ClientEntity extends ProjectEntity{
+    private String oportunityID;
+    private String theme;
 
-    private String oportunityRelatedName;
-    private String subject;
-
-    public ClientEntity(String entityName, List<String> contactList, LocalDate startDate, LocalDate endDate,
-                        String projectName, String oportunityRelatedName, String subject) {
-        super(entityName, contactList, startDate, endDate, projectName);
-        this.oportunityRelatedName = oportunityRelatedName;
-        this.subject = subject;
+    public ClientEntity(String entityID, List<String> contactList, LocalDate startDate, LocalDate endDate,
+                        String projectID, String projectDescription, String oportunityID, String theme) {
+        super(entityID, contactList, startDate, endDate, projectID, projectDescription);
+        this.oportunityID = oportunityID;
+        this.theme = theme;
     }
 
     public ClientEntity() {
     }
 
-    public String getOportunityRelatedName() {
-        return oportunityRelatedName;
+    public String getOportunityID() {
+        return oportunityID;
     }
 
-    public void setOportunityRelatedName(String oportunityRelatedName) {
-        this.oportunityRelatedName = oportunityRelatedName;
+    public void setOportunityID(String oportunityID) {
+        this.oportunityID = oportunityID;
     }
 
-    public String getSubject() {
-        return subject;
+    public String getTheme() {
+        return theme;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
+    public void setTheme(String theme) {
+        this.theme = theme;
     }
-
 }
+

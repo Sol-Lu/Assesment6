@@ -1,32 +1,36 @@
-package com.assesment6.CRM.Entities;
+package com.Assesment6.CRM.Entities;
 
 import java.time.LocalDate;
 import java.util.List;
 
 public class ProjectEntity {
-    private String entityName;
+    private String entityID;
     private List<String> contactList;
     private LocalDate startDate;
     private LocalDate endDate;
-    private String projectName;
+    private String projectID;
+    private String projectDescription;
+
+
+    public ProjectEntity(String entityID, List<String> contactList, LocalDate startDate, LocalDate endDate,
+                         String projectID, String projectDescription) {
+        this.entityID = entityID;
+        this.contactList = contactList;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.projectID = projectID;
+        this.projectDescription = projectDescription;
+    }
 
     public ProjectEntity() {
     }
 
-    public ProjectEntity(String entityName, List<String> contactList, LocalDate startDate, LocalDate endDate, String projectName) {
-        this.entityName = entityName;
-        this.contactList = contactList;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.projectName = projectName;
+    public String getEntityID() {
+        return entityID;
     }
 
-    public String getEntityName() {
-        return entityName;
-    }
-
-    public void setEntityName(String entityName) {
-        this.entityName = entityName;
+    public void setEntityID(String entityID) {
+        this.entityID = entityID;
     }
 
     public List<String> getContactList() {
@@ -53,11 +57,19 @@ public class ProjectEntity {
         this.endDate = endDate;
     }
 
-    public String getProjectName() {
-        return projectName;
+    public String getProjectID() {
+        return projectID;
     }
 
-    public void setProjectName(String projectName) {
-        this.projectName = projectName;
+    public void setProjectID(String projectID) {
+        this.projectID = projectID;
+    }
+
+    public String getProjectDescription() {
+        return projectDescription;
+    }
+
+    public void setProjectDescription(String projectDescription) {
+        this.projectDescription = projectDescription;
     }
 }

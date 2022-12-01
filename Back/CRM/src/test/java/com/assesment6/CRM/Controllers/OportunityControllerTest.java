@@ -1,4 +1,4 @@
-package com.assesment6.CRM.Controllers;
+package com.Assesment6.CRM.Controllers;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,5 +8,9 @@ class OportunityControllerTest {
 
     @Test
     void createOportunity() {
+    }
+
+    @Test
+    void show() {
     }
 }

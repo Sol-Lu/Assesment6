@@ -4,13 +4,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ClientControllerTest {
+class MainUsernameControllerTest {
 
     @Test
-    void create() {
+    void createCrmentity() {
     }
 
     @Test
-    void show() {
+    void showUsername() {
     }
 }

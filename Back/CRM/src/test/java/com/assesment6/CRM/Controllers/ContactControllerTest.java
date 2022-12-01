@@ -1,4 +1,4 @@
-package com.assesment6.CRM.Controllers;
+package com.Assesment6.CRM.Controllers;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class ContactControllerTest {
 
     @Test
-    void createContact() {
+    void create() {
+    }
 
+    @Test
+    void show() {
     }
 }

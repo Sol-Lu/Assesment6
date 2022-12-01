@@ -1,4 +1,4 @@
-package com.assesment6.CRM;
+package com.Assesment6.CRM;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
