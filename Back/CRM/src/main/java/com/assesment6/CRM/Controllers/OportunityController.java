@@ -14,16 +14,17 @@ import java.util.List;
 public class OportunityController {
 
     @PutMapping("/oportunity")
-    public OportunityEntity createOportunity(){
-        OportunityEntity newOportunity = new OportunityEntity();
-        newOportunity.setEntityID();
-        newOportunity.setContactList();
-        newOportunity.setStartDate();
-        newOportunity.setProjectID();
-        newOportunity.setProjectDescription();
-        newOportunity.setProposals();
-
-        return newOportunity;
+    public OportunityEntity createOportunity(){  //OportunityEntity createOportunity(OportunityEntity)
+//        OportunityEntity newOportunity = new OportunityEntity();
+//        newOportunity.setEntityID();
+//        newOportunity.setContactList();
+//        newOportunity.setStartDate();
+//        newOportunity.setProjectID();
+//        newOportunity.setProjectDescription();
+//        newOportunity.setProposals();
+//
+//        return newOportunity;
+        return null;
     }
 
     @GetMapping("/oportunity")

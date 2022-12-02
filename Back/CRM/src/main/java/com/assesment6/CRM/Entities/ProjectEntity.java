@@ -12,8 +12,8 @@ public class ProjectEntity {
     private String projectDescription;
 
 
-    public ProjectEntity(String entityID, List<String> contactList, LocalDate startDate, LocalDate endDate,
-                         String projectID, String projectDescription) {
+    public ProjectEntity(String projectID, String entityID, List<String> contactList, LocalDate startDate, LocalDate endDate,
+                         String projectDescription) {
         this.entityID = entityID;
         this.contactList = contactList;
         this.startDate = startDate;

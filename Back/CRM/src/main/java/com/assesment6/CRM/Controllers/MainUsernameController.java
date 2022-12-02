@@ -1,6 +1,6 @@
 package com.Assesment6.CRM.Controllers;
 
-import com.Assesment6.CRM.Entities.CrmentityEntity;
+import com.Assesment6.CRM.Entities.CrmEntityEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
     @CrossOrigin(origins = "*")
     public class MainUsernameController {
         @PutMapping("/crmentitymain")
-        public CrmentityEntity createCrmentity(){
+        public CrmEntityEntity createCrmentity(){
             return null;
         }
 
         @GetMapping("/crmentitymain")
-        public CrmentityEntity showUsername(){
-            CrmentityEntity username = new CrmentityEntity();
-            username.getEntityID("1IndMan");
+        public CrmEntityEntity getUsername(){
+            CrmEntityEntity username = new CrmEntityEntity();
+            username.setEntityID("1IndMan");
             username.setEntityName("Manuel");
             username.isBusiness(false);
             username.setEmail("notearrimesalapared@gmail.com");

@@ -2,7 +2,7 @@ package com.Assesment6.CRM.Entities;
 
 import javax.swing.*;
 
-public class MainUsernameEntity extends CrmentityEntity{
+public class MainUsernameEntity extends CrmEntityEntity {
     public JPasswordField getPassword() {
         return password;
     }

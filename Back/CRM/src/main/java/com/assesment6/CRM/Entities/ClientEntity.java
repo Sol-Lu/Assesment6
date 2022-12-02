@@ -9,7 +9,7 @@ public class ClientEntity extends ProjectEntity{
 
     public ClientEntity(String entityID, List<String> contactList, LocalDate startDate, LocalDate endDate,
                         String projectID, String projectDescription, String oportunityID, String theme) {
-        super(entityID, contactList, startDate, endDate, projectID, projectDescription);
+        super(projectID, entityID, contactList, startDate, endDate, projectDescription);
         this.oportunityID = oportunityID;
         this.theme = theme;
     }

@@ -3,8 +3,10 @@
     "",
     "\\reactprojectassesment6",
     "\\reactprojectassesment6\\public",
-    "\\reactprojectassesment6\\src"
+    "\\reactprojectassesment6\\src",
+    "\\reactprojectassesment6\\src\\Meths",
+    "\\reactprojectassesment6\\src\\Pages"
   ],
-  "SelectedNode": "\\reactprojectassesment6\\src\\App.js",
+  "SelectedNode": "\\reactprojectassesment6\\src\\Pages\\Clients.js",
   "PreviewInSolutionExplorer": false
 }

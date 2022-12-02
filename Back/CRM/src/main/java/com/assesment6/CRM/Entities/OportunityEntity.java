@@ -8,7 +8,7 @@ public class OportunityEntity extends ProjectEntity{
 
     public OportunityEntity(String entityID, List<String> contactList, LocalDate startDate, LocalDate endDate,
                             String projectID, String projectDescription, String proposals) {
-        super(entityID, contactList, startDate, endDate, projectID, projectDescription);
+        super(projectID, entityID, contactList, startDate, endDate, projectDescription);
         this.proposals = proposals;
     }
 
